@@ -1,11 +1,155 @@
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-}
+  .left-side {
+  	background-color: #2b2f3d;
+  	height: 100%;
+  	width: 300px;
+  	position: fixed;
+  }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
+  * {
+  	font-weight: lighter;
+  }
+
+  .logo-container {
+  	padding:0 25px;
+  }
+
+  .inputs-row {
+  	margin-top: 20px; 
+  	margin-bottom: 20px;
+  	display: grid;
+  	height: 40px;
+  	grid-template-columns: 5fr 3fr; 
+  }
+
+  .inputs-row > * {
+  	box-sizing: border-box;
+  	margin: 0 5px;
+  	height: 100%;
+  }
+
+  input[type=text] {
+  	padding:5px; 
+  	border: 1px solid #ccc;
+  	border-radius: 3px;
+  	-webkit-border-radius: 5px;
+  	font-size: 16px;
+  }
+
+  input[type=button] {
+  	padding:5px; 
+  	border:none;
+  	background-color: #29ccbe; 
+  	-webkit-border-radius: 5px;
+  	border-radius: 3px;
+  	font-size: 16px;
+  	color: #fff;
+  	cursor: pointer;
+  }
+  
+  .left-logo {
+  	margin-bottom: 10px;
+  	font-size: 35px;
+  	color: #fff
+  }
+
+  .sub-logo {
+  	margin: 0;
+  	color: gray;
+  	font-size: 22px;
+  }
+
+  .right-side {
+  	width: calc(100% - 300px);
+  	float: right;
+  	height: 100%;
+  	background-color: #f1f1f1;
+  }
+
+  .flex-container {
+  	display: flex;
+  	justify-content: space-around;
+  }
+
+  .flex-container > div {
+  	background-color: #f7f7f7;
+  	margin: 10px;
+  	padding: 20px;
+  	font-size: 30px;
+  	width: 50%;
+  	margin: 10px;
+  	min-height: 400px;
+  	box-shadow: 0px 0px 5px grey;
+  }
+
+  .header-box {
+  	color: gray;
+  	font-size: 32px;
+  }
+
+  .task-row {
+  	height: 60px;
+  	width: 100%;
+  	border-bottom: 1px solid lightgray;
+  }
+
+  .task-title {
+  	font-weight: 900;
+  	font-size: 14px;
+  	padding-top: 30px;
+  }
+
+  .task-title span {
+  	background-color: #29ccbe;
+  	padding: 5px 5px;
+  	font-size: 14px;
+  	border-radius: 15px;
+  	font-weight: 500;
+  	margin-left: 10px; 
+  }
+
+  input[type=button].task-delete-btn {
+  	float: right;
+  	color: red;
+  	border: 1px solid red;
+  	background-color: #fff;
+  	font-weight: initial;
+  	margin-top: -10px;
+  	width: 75px;
+  }
+
+  .task-row.active::before {
+  	display: block;
+  	content: '';
+  	background: red;
+  	height: 60px;
+  	width: 4px;
+  	margin-left: -22px;
+  	position: absolute;
+  }
+
+  .comment-item {
+  	display: grid;
+  	grid-template-columns: 1fr 6fr;
+  	border-bottom: 1px solid lightgray;
+  	padding-bottom: 10px;
+  	margin-top: 25px; 
+  }
+
+  .comment-logo{
+  	height: 50px;
+  	background: red;
+  	margin-right: 15px;
+  }
+
+  .mg-btm-25 {
+  	margin-bottom: 25px;
+  }
+
+  .comment-box {
+  	font-size: 14px;
+  	line-height: 16px;
+  }
+
+  textarea {
+  	resize: none;
+  }
