@@ -1,0 +1,17 @@
+<div class="task-comments" [hidden]="!isSelectedTask">
+  <div class="header-box">
+    {{activeTask.taskName}}
+  </div>
+
+  <div *ngFor="let item of activeTask?.comments" class="comment-item">
+    <div class="comment-logo" [style.background-color]="item.color"></div>
+    <div class="comment-box">
+      {{item.text}}
+    </div>
+  </div>
+
+  <div class="comment-item">
+    <div class="comment-logo"></div>
+    <textarea #commentText (key.Enter)="addComment(this)"></textarea>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="task-list">
+  <div class="header-box">
+    Items
+  </div>
+  <div class="inputs-row">
+    <input #taskName type="text" name="task-name" placeholder="Type name here...">
+    <input (click)="addTask(taskName)" type="button" name="search-btn" value="Add new">
+  </div>
+
+  <div *ngFor="let item of taskArray" (click)="selectTask(item)" [class.active]="item.isSelected" class="task-row" >
+    <div class="task-title">
+      {{item.taskName}} <span>{{item.comments.length}}</span>
+
+      <input (click)="removeTask(item)" class="task-delete-btn" type="button" name="task-delete-btn" value="Delete">
+    </div>
+  </div>
+</div>

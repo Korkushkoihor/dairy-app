@@ -1,0 +1,27 @@
+.comment-box {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.comment-item {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-top: 25px;
+}
+
+.comment-item:last-child{
+  border-bottom: none;
+}
+
+.comment-logo {
+  height: 50px;
+  background: red;
+  margin-right: 15px;
+}

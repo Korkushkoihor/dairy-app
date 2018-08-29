@@ -1,0 +1,79 @@
+.header-box {
+  color: gray;
+  font-size: 32px;
+}
+
+.task-row {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.task-title {
+  font-weight: 900;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.task-title span {
+  background-color: #29ccbe;
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+input[type=button].task-delete-btn {
+  float: right;
+  color: red;
+  border: 1px solid red;
+  background-color: #fff;
+  font-weight: initial;
+  margin-top: -10px;
+  width: 75px;
+}
+
+.task-row.active::before {
+  display: block;
+  content: '';
+  background: red;
+  height: 60px;
+  width: 4px;
+  margin-left: -22px;
+  position: absolute;
+}
+
+.inputs-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  height: 40px;
+  grid-template-columns: 5fr 3fr;
+}
+
+.inputs-row > * {
+  box-sizing: border-box;
+  margin: 0 5px;
+  height: 100%;
+}
+
+input[type=text] {
+  padding:5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type=button] {
+  padding:5px;
+  border:none;
+  background-color: #29ccbe;
+  -webkit-border-radius: 5px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
