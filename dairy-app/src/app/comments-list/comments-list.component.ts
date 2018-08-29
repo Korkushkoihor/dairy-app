@@ -40,7 +40,9 @@ export class CommentsListComponent implements OnInit, OnChanges {
   @HostListener('window:keydown', ['$event'])
   onKeyPress($event: KeyboardEvent) {
     if (($event.ctrlKey || $event.metaKey) && $event.keyCode === 13) {
-      this.addComment(this.commentText.nativeElement.value);
+      if (this.commentText.nativeElement.value)
+        this.addComment(this.commentText.nativeElement.value);
+      this.commentText.nativeElement.value = '';
     }
   }
 
