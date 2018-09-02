@@ -1,3 +1,2 @@
-# dairy-app
-test proj for empeek
-https://github.com/Korkushkoihor/dairy-app.github.io
+https://korkushkoihor.github.io/dairy-app.github.io/
+
