@@ -1,3 +1,4 @@
 # dairy-app
-test proj for empeek
+deployed version:
 https://github.com/Korkushkoihor/dairy-app.github.io
+
